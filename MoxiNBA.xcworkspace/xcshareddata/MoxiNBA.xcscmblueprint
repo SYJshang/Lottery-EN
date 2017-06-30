@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8CE745711732CE2228474647B51B2D1F6C031F4D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F9089711E9DDF78290963C86ABB78DB461BFF0DF" : 9223372036854775807,
+    "8CE745711732CE2228474647B51B2D1F6C031F4D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6464818C-5225-4672-A3ED-86F5535877C5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F9089711E9DDF78290963C86ABB78DB461BFF0DF" : "2017_5_24%E8%8B%B1%E6%96%87%E7%89%88\/",
+    "8CE745711732CE2228474647B51B2D1F6C031F4D" : "EN%20Lottery\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MoxiNBA",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MoxiNBA.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SYJshang\/NBA",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CE745711732CE2228474647B51B2D1F6C031F4D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/4bbbb\/2017_5_24.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F9089711E9DDF78290963C86ABB78DB461BFF0DF"
+    }
+  ]
+}

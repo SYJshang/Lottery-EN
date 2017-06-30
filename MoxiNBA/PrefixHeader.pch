@@ -1,0 +1,85 @@
+//
+//  PrefixHeader.pch
+//  MoXiDemo
+//
+//  Created by 尚勇杰 on 2017/5/26.
+//  Copyright © 2017年 尚勇杰. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "UILabel+SYJNavitaionTitleSize.h"
+#import "UIFont+SYJFontSize.h"
+#import "UIViewController+SYJViewContoller.h"
+#import <UINavigationController+FDFullscreenPopGesture.h>
+#import <SDAutoLayout.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImage+Category.h"
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <SVProgressHUD.h>
+#import <Masonry.h>
+#import <MMDrawerVisualState.h>
+#import <MMDrawerController.h>
+#import <MMDrawerBarButtonItem.h>
+#import <UIViewController+MMDrawerController.h>
+#import <MMDrawerController+Subclass.h>
+#import <MMDrawerController.h>
+#import <TZImagePickerController.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+#import <WMPageController.h>
+#import <MapKit/MapKit.h>
+#import "SYJHttpHelper.h"
+#import "SDPhotoBrowser.h"
+#import "XWScanImage.h"
+#import "Config.h"
+#import "Utils.h"
+#import "CPNetWorkRequest.h"
+#import "gobalConfig.h"
+#import "CPNetWorkConfig.h"
+#import "NSDate+INTDate.h"
+
+
+//#import "codeObfuscation.h"
+
+// 通知中心
+#define XRZNotificationCenter [NSNotificationCenter defaultCenter]
+
+
+//设备物理尺寸
+#define KSceenW [UIScreen mainScreen].bounds.size.width
+#define KSceenH [UIScreen mainScreen].bounds.size.height
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define URL @"http://api.suredbits.com/nba/v0/games"
+
+//字体颜色
+#define UIScreenHeight ([[UIScreen mainScreen] bounds].size.height)
+#define UIScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+//#define RGB(a, b, c) [UIColor colorWithRed:(a / 255.0f) green:(b / 255.0f) blue:(c / 255.0f) alpha:1.0f]
+#define RGBA(a, b, c, d) [UIColor colorWithRed:(a / 255.0f) green:(b / 255.0f) blue:(c / 255.0f) alpha:d]
+
+#define TextColor [UIColor colorWithRed:68.0/255.0 green:186.0/255.0 blue:252.0/ 255.0 alpha:1.0]
+
+#define Gray [UIColor colorWithRed:210 / 255.0 green:210 / 255.0 blue:210 / 255.0 alpha:1.0]
+
+#define NULLString(string) ((![string isKindOfClass:[NSString class]])||[string isEqualToString:@""] || (string == nil) || [string isEqualToString:@""] || [string isKindOfClass:[NSNull class]]||[[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0)
+
+#define NULLArray(array) ((array == nil)||[array isKindOfClass:[NSNull class]]||array.count ==0)
+
+
+#ifdef DEBUG // 处于开发阶段
+#define SYJLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define SYJLog(...)
+#endif
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
