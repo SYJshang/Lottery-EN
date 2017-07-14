@@ -32,7 +32,7 @@
     btn.frame = CGRectMake(10, 10, 24, 24);
     [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Release" font:scaleWithSize(24)];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"发布" font:scaleWithSize(24)];
     
     [self createViews];
     //    [self createRightBtn];
@@ -66,7 +66,7 @@
 - (void)createViews {
     
     UITextField *titleText = [[UITextField alloc]init];
-    titleText.placeholder = @"Title";
+    titleText.placeholder = @"标题";
     [titleText addTarget:self action:@selector(ListentitleChange) forControlEvents:UIControlEventEditingChanged];
     titleText.font = fontSize(scaleWithSize(23));
     [self.view addSubview:titleText];
@@ -83,7 +83,7 @@
     
     UILabel *placeHolderLabel = [[UILabel alloc] init];
     placeHolderLabel.font = fontSize(scaleWithSize(18));
-    placeHolderLabel.text = @"Content（must）";
+    placeHolderLabel.text = @"内容（必填）";
     placeHolderLabel.numberOfLines = 0;
     placeHolderLabel.textColor = [UIColor lightGrayColor];
     [placeHolderLabel sizeToFit];

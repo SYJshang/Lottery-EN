@@ -51,7 +51,7 @@
 //        imageView.image = [UIImage imageNamed:@"homeicon"];
 //        [self addSubview:imageView];
         //spr 彩票种类
-        titleName = [[UILabel alloc]initWithFrame:CGRectMake(5,3, 60, 30)];
+        titleName = [[UILabel alloc]initWithFrame:CGRectMake(5,3, 100, 30)];
 //        titleName = [[UILabel alloc]init];
 //        titleStr = @"大乐透";
 
@@ -62,7 +62,7 @@
         self.selectionStyle= UITableViewCellSelectionStyleNone;
 
         titleName.textAlignment= NSTextAlignmentLeft;
-        titleName.font = [UIFont fontWithName:@"Arial Rounded MT Bold"  size:(17.0)];
+        titleName.font = [UIFont fontWithName:@"Arial Rounded MT Bold"  size:(15.0)];
 //        labelStr.numberOfLines = 2;
         [titleName setTextColor:[UIColor blackColor]];
 //        titleName.font = [UIFont systemFontOfSize:15];

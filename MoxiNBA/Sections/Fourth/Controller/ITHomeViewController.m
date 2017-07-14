@@ -16,15 +16,15 @@
 #import "ITNewsViewController.h"
 #import "ITSelectNumberViewController.h"
 #import "ITZhiShiViewController.h"
-#import "SYJCollectionFlowLayout.h"
-#import "SYJLotteryCollectionCell.h"
 #import "SYJNBAGameController.h"
+#import "SYJListCell.h"
+#import "WTHomeViewController.h"
 
 #define Kwidths  ([UIScreen mainScreen].bounds.size.width / 3)
 
-@interface ITHomeViewController ()<UICollectionViewDataSource, SYJCollectionFlowLayoutDelegate,UICollectionViewDelegate>
+@interface ITHomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray *listArr;
 
@@ -38,7 +38,7 @@
 - (NSMutableArray *)listArr{
     
     if (_listArr == nil) {
-        _listArr = [NSMutableArray arrayWithObjects:@"Award",@"FootBall",@"Basketball",@"TeamInfo",@"ArThree",@"ArFive",@"LotteryShop",nil];
+        _listArr = [NSMutableArray arrayWithObjects:@"开奖结果",@"足球",@"篮球",@"球队信息",@"排列三",@"排列五",@"天气",@"彩票商店",nil];
     }
     
     return _listArr;
@@ -51,7 +51,7 @@
         
         //        NSDictionary *dict = [@"":@""];
         
-        _listImgArr = [NSMutableArray arrayWithObjects:@"award",@"足球",@"篮球",@"team",@"随机",@"随机1",@"shop",nil];
+        _listImgArr = [NSMutableArray arrayWithObjects:@"award",@"足球",@"篮球",@"team",@"随机",@"随机1",@"weather",@"shop",nil];
     }
     
     return _listImgArr;
@@ -62,7 +62,7 @@
     
     [super viewWillAppear:animated];
     
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Find" font:18.0];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"更多" font:18.0];
 }
 
 - (void)viewDidLoad {
@@ -73,122 +73,100 @@
 //    self.listImgArr = (NSMutableArray *)[dicts allKeys];
     
     //创建瀑布流布局
-    SYJCollectionFlowLayout *layout = [[SYJCollectionFlowLayout alloc]init];
-    layout.delegate = self;
-    
     //创建CollectionView
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, KSceenW, KSceenH - 108) collectionViewLayout:layout];
-    collectionView.backgroundColor = [UIColor whiteColor];
-    collectionView.dataSource = self;
-    collectionView.delegate = self;
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KSceenW, KSceenH - 108) style:UITableViewStylePlain];
+    self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    self.collectionView = collectionView;
+    self.tableView.backgroundColor = [UIColor clearColor];
     
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
-    
-    self.collectionView.backgroundColor = [UIColor whiteColor];
-    
-    [self.view addSubview:self.collectionView];
-    self.collectionView.backgroundColor = [UIColor clearColor];
+    [self.tableView registerClass:[SYJListCell class] forCellReuseIdentifier:@"cell"];
+    [self.view addSubview:self.tableView];
 
     
-    [self.collectionView registerClass:[SYJLotteryCollectionCell class] forCellWithReuseIdentifier:@"cell"];
 
     // Do any additional setup after loading the view.
 }
 
 
-#pragma mark - <UICollectionViewDataSource>
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return self.listArr.count;
-    SYJLog(@"%ld",self.listArr.count);
+#pragma mark - table view dataSource
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 45;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.listArr.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
-    SYJLotteryCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    cell.img.image = [UIImage imageNamed:self.listImgArr[indexPath.row]];
-    cell.lotteryName.text = self.listArr[indexPath.row];
+    return 20;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SYJListCell *cell = [SYJListCell cellWithTableView:tableView];
+    cell.iconImg.image = [UIImage imageNamed:self.listImgArr[indexPath.section]];
+    cell.nameLab.text = self.listArr[indexPath.section];
+    
     
     return cell;
 }
 
+#pragma mark - table view delegate
 
-
-
-#pragma mark - <CYXWaterFlowLayoutDelegate>
-- (CGFloat)waterflowLayout:(SYJCollectionFlowLayout *)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
-{
-    return KSceenW / 3;
-}
-
-- (CGFloat)rowMarginInWaterflowLayout:(SYJCollectionFlowLayout *)waterflowLayout
-{
-    return 0;
-}
-
-- (CGFloat)columnCountInWaterflowLayout:(SYJCollectionFlowLayout *)waterflowLayout
-{
-    return 3;
-}
-
-- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(SYJCollectionFlowLayout *)waterflowLayout
-{
-    return UIEdgeInsetsMake(5,5,5,5);
-}
-
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    //    SYJLotteryCollectionCell *cell = (SYJLotteryCollectionCell *)[self coll];
-//    SYJLotteryCollectionCell *cell = (SYJLotteryCollectionCell *)[self collectionView:self.collectionView cellForItemAtIndexPath:indexPath];
-    
-    if (indexPath.row == 0) {
+    if (indexPath.section == 0) {
         ITKaiJiangViewController *vc = [[ITKaiJiangViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 1){
+    }else if (indexPath.section == 1){
         ITMatchDetailViewController *vc = [[ITMatchDetailViewController alloc]init];
         vc.type = 0;
         [self.navigationController pushViewController:vc animated:YES];
-//        }else{
-//            vc.type = 1;
-//        }
-    }else if(indexPath.row == 2){
+        //        }else{
+        //            vc.type = 1;
+        //        }
+    }else if(indexPath.section == 2){
         SYJNBAGameController *vc = [[SYJNBAGameController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 3){
+    }else if (indexPath.section == 3){
         SYJFourthController *vc = [[SYJFourthController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 4){
+    }else if (indexPath.section == 4){
         ITSelectNumberViewController *vc = [[ITSelectNumberViewController alloc]init];
-//        if (indexPath.row == 0) {
-//            vc.type = 5;
-//        }else{
-            vc.type = 3;
-//        }
+        //        if (indexPath.row == 0) {
+        //            vc.type = 5;
+        //        }else{
+        vc.type = 3;
+        //        }
         [self.navigationController pushViewController:vc animated:YES];
-    }else if(indexPath.row == 5){
+    }else if(indexPath.section == 5){
         ITSelectNumberViewController *vc = [[ITSelectNumberViewController alloc]init];
         vc.type = 5;
         [self.navigationController pushViewController:vc animated:YES];
-    }else if(indexPath.row == 6){
+    }else if(indexPath.section == 6){
+        WTHomeViewController *vc = [[WTHomeViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
         ITZhiShiViewController *vc = [[ITZhiShiViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
-
-
+    
 
     
 }
 
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(Kwidths, Kwidths);
-}
 
 
 - (void)didReceiveMemoryWarning {

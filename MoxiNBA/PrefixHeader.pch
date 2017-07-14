@@ -42,6 +42,8 @@
 #import "gobalConfig.h"
 #import "CPNetWorkConfig.h"
 #import "NSDate+INTDate.h"
+#import "Compiler.h"
+#import "NSArray+Log.h"
 
 
 //#import "codeObfuscation.h"
@@ -56,13 +58,21 @@
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
-#define URL @"http://api.suredbits.com/nba/v0/games"
+#define URL @"www.h1055.com/"
 
 //字体颜色
 #define UIScreenHeight ([[UIScreen mainScreen] bounds].size.height)
 #define UIScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+
+#define kNavi_Height  64.0
+
+
 //#define RGB(a, b, c) [UIColor colorWithRed:(a / 255.0f) green:(b / 255.0f) blue:(c / 255.0f) alpha:1.0f]
 #define RGBA(a, b, c, d) [UIColor colorWithRed:(a / 255.0f) green:(b / 255.0f) blue:(c / 255.0f) alpha:d]
+
+#define App_MainColor  UIColorFromRGB(0xff0000)
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 
 #define TextColor [UIColor colorWithRed:68.0/255.0 green:186.0/255.0 blue:252.0/ 255.0 alpha:1.0]
 

@@ -51,8 +51,8 @@
     [btn setImage:[UIImage imageNamed:@"back1"] forState:UIControlStateNormal];
     btn.frame = CGRectMake(10, 10, 24, 24);
     [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Forum" font:scaleWithSize(24)];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"票友圈" font:scaleWithSize(24)];
     
     [self addSubViews];
     [SVProgressHUD showWithStatus:@"loading..."];
@@ -94,31 +94,11 @@
     } failure:^(NSError *err) {
         
     }];
-//    [[HttpRequestClient sharedClient]getKaijiangNewsWithUrl:url request:^(int resultCode, NSString *resultMsg, NSArray *dataList, NSError *error) {
-//        NSLog(@"%@",dataList);
-//        NSDictionary *dic = (NSDictionary *)dataList;
-//        if (resultCode ==0) {
-//            
-//            _dataArr  = [dic objectForKey:@"result"];
-//            //success
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                [tableview reloadData];
-//                //                [self showHint:[dic objectForKey:@"error"]];
-//            });
-//        }else{
-//            //fail
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                //                [tableview reloadData];
-//                [SVProgressHUD showWithStatus:@"error"];
-//            });
-//            
-//            
-//        }
-//    }];
+
 }
 -(void)addSubViews{
     
-    UITableView *tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screen_width, screen_height - scaleWithSize(46))];
+    UITableView *tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screen_width, screen_height - 108)];
     tableview.delegate = self;
     tableview.dataSource = self;
     tableview.backgroundColor = [UIColor clearColor];

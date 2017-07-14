@@ -28,7 +28,7 @@
     btn.frame = CGRectMake(10, 10, 24, 24);
     [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Detail" font:scaleWithSize(24)];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"详情" font:scaleWithSize(24)];
     
 }
 

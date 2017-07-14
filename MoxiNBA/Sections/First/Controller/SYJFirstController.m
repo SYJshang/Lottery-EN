@@ -40,10 +40,11 @@
     [super viewWillAppear:animated];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:@"菜单"] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(10, 10, 24, 24);
+    btn.frame = CGRectMake(0, 10, 40, 40);
     [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Kansas" font:scaleWithSize(24)];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"Kansas" font:scaleWithSize(24)];
+    
     
 }
 

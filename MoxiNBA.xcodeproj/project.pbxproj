@@ -21,6 +21,31 @@
 		351A27761F03885400442A24 /* ITNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A27751F03885400442A24 /* ITNewsModel.m */; };
 		351A27791F03888E00442A24 /* ITBaoGaoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A27781F03888E00442A24 /* ITBaoGaoViewCell.m */; };
 		351A277C1F0389A500442A24 /* ITNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A277B1F0389A500442A24 /* ITNewsTableViewCell.m */; };
+		3533BEBA1F13572100B8CDCA /* SYJListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEB91F13572100B8CDCA /* SYJListCell.m */; };
+		3533BEBD1F14843D00B8CDCA /* Compiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEBC1F14843D00B8CDCA /* Compiler.m */; };
+		3533BEC01F148F0700B8CDCA /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEBF1F148F0700B8CDCA /* NSArray+Log.m */; };
+		3533BEC71F14D65A00B8CDCA /* SYJMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEC61F14D65A00B8CDCA /* SYJMainVC.m */; };
+		3533BECA1F14D69F00B8CDCA /* SYJTableCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEC91F14D69F00B8CDCA /* SYJTableCollectionCell.m */; };
+		3533BED01F150CA500B8CDCA /* LTLotteryInfoMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BECF1F150CA500B8CDCA /* LTLotteryInfoMode.m */; };
+		3533BED31F150CBB00B8CDCA /* LTLotteryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BED21F150CBB00B8CDCA /* LTLotteryManager.m */; };
+		3533BED61F150D0000B8CDCA /* LTLotteryPlayMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BED51F150D0000B8CDCA /* LTLotteryPlayMode.m */; };
+		3533BED91F150D1700B8CDCA /* LTLotteryPlayNumMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BED81F150D1700B8CDCA /* LTLotteryPlayNumMod.m */; };
+		3533BEDF1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEDC1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.m */; };
+		3533BEE01F150F5A00B8CDCA /* UINavigationController+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEDE1F150F5A00B8CDCA /* UINavigationController+NavAlpha.m */; };
+		3533BEE31F151EC800B8CDCA /* LTMyLottoryNumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEE21F151EC800B8CDCA /* LTMyLottoryNumTableViewController.m */; };
+		3533BEE61F151F3500B8CDCA /* LTNumberPickingTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEE51F151F3500B8CDCA /* LTNumberPickingTableVC.m */; };
+		3533BEF41F151FC600B8CDCA /* LTBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEE91F151FC600B8CDCA /* LTBallView.m */; };
+		3533BEF51F151FC600B8CDCA /* LTChoseNumTitleV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEEB1F151FC600B8CDCA /* LTChoseNumTitleV.m */; };
+		3533BEF61F151FC600B8CDCA /* LTChosePlayRuleV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEED1F151FC600B8CDCA /* LTChosePlayRuleV.m */; };
+		3533BEF71F151FC600B8CDCA /* LTPickHeaderV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEEF1F151FC600B8CDCA /* LTPickHeaderV.m */; };
+		3533BEF81F151FC600B8CDCA /* LTPickingBallBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEF11F151FC600B8CDCA /* LTPickingBallBottomBar.m */; };
+		3533BEF91F151FC600B8CDCA /* LTPickingBallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEF31F151FC600B8CDCA /* LTPickingBallCell.m */; };
+		3533BEFC1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEFB1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.m */; };
+		3533BEFF1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BEFE1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.m */; };
+		3533BF021F15215D00B8CDCA /* LTLotteryPickNumberCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BF011F15215D00B8CDCA /* LTLotteryPickNumberCatch.m */; };
+		3533BF051F15223900B8CDCA /* LTLotteryBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BF041F15223900B8CDCA /* LTLotteryBookCell.m */; };
+		3533BF081F15255600B8CDCA /* LTLotteryBookCellBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BF071F15255600B8CDCA /* LTLotteryBookCellBallView.m */; };
+		3533BF0B1F1527A200B8CDCA /* SYJLotSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3533BF0A1F1527A200B8CDCA /* SYJLotSelectCell.m */; };
 		356D4EEA1EF1791F00528B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 356D4EE91EF1791F00528B51 /* main.m */; };
 		356D4F3F1EF17A5100528B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 356D4F011EF17A5100528B51 /* AppDelegate.m */; };
 		356D4F431EF17A5100528B51 /* SYJHttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 356D4F0A1EF17A5100528B51 /* SYJHttpHelper.m */; };
@@ -190,6 +215,9 @@
 		35EF3BA71F033DDF00EE5117 /* SYJTwoByController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF3BA61F033DDF00EE5117 /* SYJTwoByController.m */; };
 		35EF3BAA1F033F0800EE5117 /* SYJPickMiddleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF3BA91F033F0800EE5117 /* SYJPickMiddleCell.m */; };
 		35EF3BAD1F033FC300EE5117 /* SYJPickDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF3BAC1F033FC300EE5117 /* SYJPickDetailVC.m */; };
+		35F2F9A21F1745BB0022264B /* SYJMyCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F2F9A11F1745BB0022264B /* SYJMyCenterVC.m */; };
+		35F2F9A51F1748D70022264B /* SYJPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F2F9A41F1748D70022264B /* SYJPersonCell.m */; };
+		35F2F9AB1F1762AC0022264B /* SYJInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F2F9AA1F1762AC0022264B /* SYJInfoVC.m */; };
 		C598293A8A322AD3BAE38FDE /* libPods-MoxiNBA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EC952F01888F20EA96860F /* libPods-MoxiNBA.a */; };
 /* End PBXBuildFile section */
 
@@ -222,6 +250,56 @@
 		351A27781F03888E00442A24 /* ITBaoGaoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITBaoGaoViewCell.m; sourceTree = "<group>"; };
 		351A277A1F0389A500442A24 /* ITNewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITNewsTableViewCell.h; sourceTree = "<group>"; };
 		351A277B1F0389A500442A24 /* ITNewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITNewsTableViewCell.m; sourceTree = "<group>"; };
+		3533BEB81F13572100B8CDCA /* SYJListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJListCell.h; path = ../Controller/SYJListCell.h; sourceTree = "<group>"; };
+		3533BEB91F13572100B8CDCA /* SYJListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJListCell.m; path = ../Controller/SYJListCell.m; sourceTree = "<group>"; };
+		3533BEBB1F14843D00B8CDCA /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
+		3533BEBC1F14843D00B8CDCA /* Compiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compiler.m; sourceTree = "<group>"; };
+		3533BEBE1F148F0700B8CDCA /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		3533BEBF1F148F0700B8CDCA /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		3533BEC51F14D65A00B8CDCA /* SYJMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJMainVC.h; sourceTree = "<group>"; };
+		3533BEC61F14D65A00B8CDCA /* SYJMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJMainVC.m; sourceTree = "<group>"; };
+		3533BEC81F14D69F00B8CDCA /* SYJTableCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJTableCollectionCell.h; sourceTree = "<group>"; };
+		3533BEC91F14D69F00B8CDCA /* SYJTableCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJTableCollectionCell.m; sourceTree = "<group>"; };
+		3533BECE1F150CA500B8CDCA /* LTLotteryInfoMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryInfoMode.h; sourceTree = "<group>"; };
+		3533BECF1F150CA500B8CDCA /* LTLotteryInfoMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryInfoMode.m; sourceTree = "<group>"; };
+		3533BED11F150CBB00B8CDCA /* LTLotteryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryManager.h; sourceTree = "<group>"; };
+		3533BED21F150CBB00B8CDCA /* LTLotteryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryManager.m; sourceTree = "<group>"; };
+		3533BED41F150D0000B8CDCA /* LTLotteryPlayMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryPlayMode.h; sourceTree = "<group>"; };
+		3533BED51F150D0000B8CDCA /* LTLotteryPlayMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryPlayMode.m; sourceTree = "<group>"; };
+		3533BED71F150D1700B8CDCA /* LTLotteryPlayNumMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryPlayNumMod.h; sourceTree = "<group>"; };
+		3533BED81F150D1700B8CDCA /* LTLotteryPlayNumMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryPlayNumMod.m; sourceTree = "<group>"; };
+		3533BEDB1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavAlpha.h"; sourceTree = "<group>"; };
+		3533BEDC1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavAlpha.m"; sourceTree = "<group>"; };
+		3533BEDD1F150F5A00B8CDCA /* UINavigationController+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavAlpha.h"; sourceTree = "<group>"; };
+		3533BEDE1F150F5A00B8CDCA /* UINavigationController+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavAlpha.m"; sourceTree = "<group>"; };
+		3533BEE11F151EC800B8CDCA /* LTMyLottoryNumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMyLottoryNumTableViewController.h; sourceTree = "<group>"; };
+		3533BEE21F151EC800B8CDCA /* LTMyLottoryNumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMyLottoryNumTableViewController.m; sourceTree = "<group>"; };
+		3533BEE41F151F3500B8CDCA /* LTNumberPickingTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNumberPickingTableVC.h; sourceTree = "<group>"; };
+		3533BEE51F151F3500B8CDCA /* LTNumberPickingTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNumberPickingTableVC.m; sourceTree = "<group>"; };
+		3533BEE81F151FC600B8CDCA /* LTBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBallView.h; sourceTree = "<group>"; };
+		3533BEE91F151FC600B8CDCA /* LTBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTBallView.m; sourceTree = "<group>"; };
+		3533BEEA1F151FC600B8CDCA /* LTChoseNumTitleV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChoseNumTitleV.h; sourceTree = "<group>"; };
+		3533BEEB1F151FC600B8CDCA /* LTChoseNumTitleV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChoseNumTitleV.m; sourceTree = "<group>"; };
+		3533BEEC1F151FC600B8CDCA /* LTChosePlayRuleV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChosePlayRuleV.h; sourceTree = "<group>"; };
+		3533BEED1F151FC600B8CDCA /* LTChosePlayRuleV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChosePlayRuleV.m; sourceTree = "<group>"; };
+		3533BEEE1F151FC600B8CDCA /* LTPickHeaderV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPickHeaderV.h; sourceTree = "<group>"; };
+		3533BEEF1F151FC600B8CDCA /* LTPickHeaderV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPickHeaderV.m; sourceTree = "<group>"; };
+		3533BEF01F151FC600B8CDCA /* LTPickingBallBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPickingBallBottomBar.h; sourceTree = "<group>"; };
+		3533BEF11F151FC600B8CDCA /* LTPickingBallBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPickingBallBottomBar.m; sourceTree = "<group>"; };
+		3533BEF21F151FC600B8CDCA /* LTPickingBallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPickingBallCell.h; sourceTree = "<group>"; };
+		3533BEF31F151FC600B8CDCA /* LTPickingBallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPickingBallCell.m; sourceTree = "<group>"; };
+		3533BEFA1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryPlaySelectNumMode.h; sourceTree = "<group>"; };
+		3533BEFB1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryPlaySelectNumMode.m; sourceTree = "<group>"; };
+		3533BEFD1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryPlaySelectNumGroupMod.h; sourceTree = "<group>"; };
+		3533BEFE1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryPlaySelectNumGroupMod.m; sourceTree = "<group>"; };
+		3533BF001F15215D00B8CDCA /* LTLotteryPickNumberCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTLotteryPickNumberCatch.h; path = ../LTLotteryPickNumberCatch.h; sourceTree = "<group>"; };
+		3533BF011F15215D00B8CDCA /* LTLotteryPickNumberCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LTLotteryPickNumberCatch.m; path = ../LTLotteryPickNumberCatch.m; sourceTree = "<group>"; };
+		3533BF031F15223900B8CDCA /* LTLotteryBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryBookCell.h; sourceTree = "<group>"; };
+		3533BF041F15223900B8CDCA /* LTLotteryBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryBookCell.m; sourceTree = "<group>"; };
+		3533BF061F15255600B8CDCA /* LTLotteryBookCellBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLotteryBookCellBallView.h; sourceTree = "<group>"; };
+		3533BF071F15255600B8CDCA /* LTLotteryBookCellBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLotteryBookCellBallView.m; sourceTree = "<group>"; };
+		3533BF091F1527A200B8CDCA /* SYJLotSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJLotSelectCell.h; sourceTree = "<group>"; };
+		3533BF0A1F1527A200B8CDCA /* SYJLotSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJLotSelectCell.m; sourceTree = "<group>"; };
 		356D4EE51EF1791F00528B51 /* MoxiNBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoxiNBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356D4EE91EF1791F00528B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		356D4EF91EF1791F00528B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -552,6 +630,12 @@
 		35EF3BA91F033F0800EE5117 /* SYJPickMiddleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJPickMiddleCell.m; sourceTree = "<group>"; };
 		35EF3BAB1F033FC300EE5117 /* SYJPickDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJPickDetailVC.h; sourceTree = "<group>"; };
 		35EF3BAC1F033FC300EE5117 /* SYJPickDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJPickDetailVC.m; sourceTree = "<group>"; };
+		35F2F9A01F1745BB0022264B /* SYJMyCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJMyCenterVC.h; sourceTree = "<group>"; };
+		35F2F9A11F1745BB0022264B /* SYJMyCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJMyCenterVC.m; sourceTree = "<group>"; };
+		35F2F9A31F1748D70022264B /* SYJPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJPersonCell.h; sourceTree = "<group>"; };
+		35F2F9A41F1748D70022264B /* SYJPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJPersonCell.m; sourceTree = "<group>"; };
+		35F2F9A91F1762AC0022264B /* SYJInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJInfoVC.h; sourceTree = "<group>"; };
+		35F2F9AA1F1762AC0022264B /* SYJInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJInfoVC.m; sourceTree = "<group>"; };
 		6B798D0A373DE4CEDDFF1D1A /* Pods-MoxiNBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxiNBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoxiNBA/Pods-MoxiNBA.release.xcconfig"; sourceTree = "<group>"; };
 		A3EC952F01888F20EA96860F /* libPods-MoxiNBA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoxiNBA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ADD15ECFFB1C87B50DE682 /* Pods-MoxiNBA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoxiNBA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoxiNBA/Pods-MoxiNBA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -648,6 +732,72 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		3533BEC41F14D65A00B8CDCA /* NewMain */ = {
+			isa = PBXGroup;
+			children = (
+				3533BEE71F151FC600B8CDCA /* View */,
+				3533BEE41F151F3500B8CDCA /* LTNumberPickingTableVC.h */,
+				3533BEE51F151F3500B8CDCA /* LTNumberPickingTableVC.m */,
+				3533BEE11F151EC800B8CDCA /* LTMyLottoryNumTableViewController.h */,
+				3533BEE21F151EC800B8CDCA /* LTMyLottoryNumTableViewController.m */,
+				3533BEFA1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.h */,
+				3533BEFB1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.m */,
+				3533BEFD1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.h */,
+				3533BEFE1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.m */,
+				3533BED71F150D1700B8CDCA /* LTLotteryPlayNumMod.h */,
+				3533BED81F150D1700B8CDCA /* LTLotteryPlayNumMod.m */,
+				3533BED41F150D0000B8CDCA /* LTLotteryPlayMode.h */,
+				3533BED51F150D0000B8CDCA /* LTLotteryPlayMode.m */,
+				3533BED11F150CBB00B8CDCA /* LTLotteryManager.h */,
+				3533BED21F150CBB00B8CDCA /* LTLotteryManager.m */,
+				3533BECE1F150CA500B8CDCA /* LTLotteryInfoMode.h */,
+				3533BECF1F150CA500B8CDCA /* LTLotteryInfoMode.m */,
+				3533BEC81F14D69F00B8CDCA /* SYJTableCollectionCell.h */,
+				3533BEC91F14D69F00B8CDCA /* SYJTableCollectionCell.m */,
+				3533BF091F1527A200B8CDCA /* SYJLotSelectCell.h */,
+				3533BF0A1F1527A200B8CDCA /* SYJLotSelectCell.m */,
+				3533BEC51F14D65A00B8CDCA /* SYJMainVC.h */,
+				3533BEC61F14D65A00B8CDCA /* SYJMainVC.m */,
+			);
+			path = NewMain;
+			sourceTree = "<group>";
+		};
+		3533BEDA1F150F5A00B8CDCA /* MTransparentNav */ = {
+			isa = PBXGroup;
+			children = (
+				3533BEDB1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.h */,
+				3533BEDC1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.m */,
+				3533BEDD1F150F5A00B8CDCA /* UINavigationController+NavAlpha.h */,
+				3533BEDE1F150F5A00B8CDCA /* UINavigationController+NavAlpha.m */,
+			);
+			path = MTransparentNav;
+			sourceTree = "<group>";
+		};
+		3533BEE71F151FC600B8CDCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3533BF061F15255600B8CDCA /* LTLotteryBookCellBallView.h */,
+				3533BF071F15255600B8CDCA /* LTLotteryBookCellBallView.m */,
+				3533BF031F15223900B8CDCA /* LTLotteryBookCell.h */,
+				3533BF041F15223900B8CDCA /* LTLotteryBookCell.m */,
+				3533BF001F15215D00B8CDCA /* LTLotteryPickNumberCatch.h */,
+				3533BF011F15215D00B8CDCA /* LTLotteryPickNumberCatch.m */,
+				3533BEE81F151FC600B8CDCA /* LTBallView.h */,
+				3533BEE91F151FC600B8CDCA /* LTBallView.m */,
+				3533BEEA1F151FC600B8CDCA /* LTChoseNumTitleV.h */,
+				3533BEEB1F151FC600B8CDCA /* LTChoseNumTitleV.m */,
+				3533BEEC1F151FC600B8CDCA /* LTChosePlayRuleV.h */,
+				3533BEED1F151FC600B8CDCA /* LTChosePlayRuleV.m */,
+				3533BEEE1F151FC600B8CDCA /* LTPickHeaderV.h */,
+				3533BEEF1F151FC600B8CDCA /* LTPickHeaderV.m */,
+				3533BEF01F151FC600B8CDCA /* LTPickingBallBottomBar.h */,
+				3533BEF11F151FC600B8CDCA /* LTPickingBallBottomBar.m */,
+				3533BEF21F151FC600B8CDCA /* LTPickingBallCell.h */,
+				3533BEF31F151FC600B8CDCA /* LTPickingBallCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		354F78EE1F03A4CD0088A2F6 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +891,7 @@
 		356D4F0B1EF17A5100528B51 /* Libraies */ = {
 			isa = PBXGroup;
 			children = (
+				3533BEDA1F150F5A00B8CDCA /* MTransparentNav */,
 				35C33B8D1F05EBCD00813D1D /* WSLoginView */,
 				358D5E0B1EF373B600441A7C /* PYSearch */,
 			);
@@ -771,6 +922,10 @@
 		356D4F151EF17A5100528B51 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3533BEBE1F148F0700B8CDCA /* NSArray+Log.h */,
+				3533BEBF1F148F0700B8CDCA /* NSArray+Log.m */,
+				3533BEBB1F14843D00B8CDCA /* Compiler.h */,
+				3533BEBC1F14843D00B8CDCA /* Compiler.m */,
 				35EF3B5A1F00EF8A00EE5117 /* NSDate+Category.h */,
 				35EF3B5B1F00EF8A00EE5117 /* NSDate+Category.m */,
 				35EF3B5C1F00EF8A00EE5117 /* NSDateFormatter+Category.h */,
@@ -893,6 +1048,7 @@
 			children = (
 				35EF3AFF1F00DF5E00EE5117 /* SYJBaseViewController.h */,
 				35EF3B001F00DF5E00EE5117 /* SYJBaseViewController.m */,
+				35F2F99C1F1745190022264B /* 个人中心 */,
 				35EF3B251F00E7E600EE5117 /* Drawer */,
 				35EF3AEF1F00DF2800EE5117 /* First */,
 				35EF3AF71F00DF2800EE5117 /* Second */,
@@ -905,6 +1061,7 @@
 		35EF3AEF1F00DF2800EE5117 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				3533BEC41F14D65A00B8CDCA /* NewMain */,
 				35EF3AF01F00DF2800EE5117 /* Controller */,
 				35EF3AF11F00DF2800EE5117 /* Model */,
 				35EF3AF21F00DF2800EE5117 /* View */,
@@ -1060,6 +1217,8 @@
 		35EF3AF61F00DF2800EE5117 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3533BEB81F13572100B8CDCA /* SYJListCell.h */,
+				3533BEB91F13572100B8CDCA /* SYJListCell.m */,
 				35C33B7E1F04D9B100813D1D /* SYJNBAGameCell.h */,
 				35C33B7F1F04D9B100813D1D /* SYJNBAGameCell.m */,
 				35C33B6F1F04D4C400813D1D /* ITSelectNumTableViewCell.h */,
@@ -1289,6 +1448,43 @@
 			path = ExtendClass;
 			sourceTree = "<group>";
 		};
+		35F2F99C1F1745190022264B /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				35F2F99D1F1745190022264B /* Controller */,
+				35F2F99E1F1745190022264B /* Model */,
+				35F2F99F1F1745190022264B /* View */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		35F2F99D1F1745190022264B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35F2F9A01F1745BB0022264B /* SYJMyCenterVC.h */,
+				35F2F9A11F1745BB0022264B /* SYJMyCenterVC.m */,
+				35F2F9A91F1762AC0022264B /* SYJInfoVC.h */,
+				35F2F9AA1F1762AC0022264B /* SYJInfoVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		35F2F99E1F1745190022264B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35F2F99F1F1745190022264B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35F2F9A31F1748D70022264B /* SYJPersonCell.h */,
+				35F2F9A41F1748D70022264B /* SYJPersonCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9B67A6E675F7FAA4098A8F42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1443,8 +1639,10 @@
 				35C33B241F04C9C500813D1D /* ITHomeTableViewCell.m in Sources */,
 				35EF3B041F00E04200EE5117 /* SYJFirstController.m in Sources */,
 				35C33B261F04C9C500813D1D /* ITMatchDetailTableViewCell.m in Sources */,
+				3533BEC71F14D65A00B8CDCA /* SYJMainVC.m in Sources */,
 				35C33B8C1F04EF6B00813D1D /* SYJFavoriteController.m in Sources */,
 				35EF3B4F1F00EF6B00EE5117 /* UIButton+buttonImageNamed.m in Sources */,
+				35F2F9A51F1748D70022264B /* SYJPersonCell.m in Sources */,
 				35C33B031F04C46500813D1D /* SYJPlayerDataModel.m in Sources */,
 				35EF3B531F00EF6B00EE5117 /* UITextField+fontSizeUp.m in Sources */,
 				351A276A1F0357C600442A24 /* CPUserInfoModel.m in Sources */,
@@ -1453,6 +1651,7 @@
 				35C33B711F04D4C400813D1D /* ITSelectNumTableViewCell.m in Sources */,
 				358D5E1C1EF373B600441A7C /* UIColor+PYExtension.m in Sources */,
 				35EF3B921F024C9900EE5117 /* SYJDetailPowerModel.m in Sources */,
+				3533BEBD1F14843D00B8CDCA /* Compiler.m in Sources */,
 				35C33B651F04D36800813D1D /* ITTeamInfoModel.m in Sources */,
 				35C33B9E1F05EBCD00813D1D /* WSLoginView.m in Sources */,
 				35C33ACE1F0490C600813D1D /* ITNewsDetailViewController.m in Sources */,
@@ -1460,7 +1659,9 @@
 				35C33B5C1F04D2BE00813D1D /* ITTeamInfoViewController.m in Sources */,
 				35EF3B541F00EF6B00EE5117 /* UIView+bottomPosition.m in Sources */,
 				35EF3B301F00EC1800EE5117 /* BaseDetailViewController.m in Sources */,
+				3533BECA1F14D69F00B8CDCA /* SYJTableCollectionCell.m in Sources */,
 				35EF3BA71F033DDF00EE5117 /* SYJTwoByController.m in Sources */,
+				3533BEFC1F15200D00B8CDCA /* LTLotteryPlaySelectNumMode.m in Sources */,
 				35C33B161F04C9A000813D1D /* CPFindCollectionViewController.m in Sources */,
 				35C33AD31F0490EB00813D1D /* CPNetWorkConfig.m in Sources */,
 				35EF3B771F010F6200EE5117 /* SYJTitleCell.m in Sources */,
@@ -1468,13 +1669,18 @@
 				35EF3B1E1F00E6A200EE5117 /* AgreeViewController.m in Sources */,
 				35C33B621F04D35D00813D1D /* ITInfoTableViewCell.m in Sources */,
 				35C33AFD1F04C41D00813D1D /* SYJPlayerModel.m in Sources */,
+				3533BED31F150CBB00B8CDCA /* LTLotteryManager.m in Sources */,
 				35EF3B7D1F01FB8800EE5117 /* SYJAttIDModel.m in Sources */,
 				35EF3B9E1F025EA800EE5117 /* SYJHotDetailController.m in Sources */,
 				35EF3B591F00EF6B00EE5117 /* Utils.m in Sources */,
+				3533BEC01F148F0700B8CDCA /* NSArray+Log.m in Sources */,
+				3533BF051F15223900B8CDCA /* LTLotteryBookCell.m in Sources */,
 				351A276D1F0357C600442A24 /* XCHelpModel.m in Sources */,
+				3533BEFF1F15203D00B8CDCA /* LTLotteryPlaySelectNumGroupMod.m in Sources */,
 				35C33B4A1F04D23200813D1D /* ITNewsViewController.m in Sources */,
 				35C33B681F04D37D00813D1D /* ITCaiZhongViewController.m in Sources */,
 				35C33B251F04C9C500813D1D /* ITJiLuTableViewCell.m in Sources */,
+				3533BF021F15215D00B8CDCA /* LTLotteryPickNumberCatch.m in Sources */,
 				35EF3B861F023A0F00EE5117 /* SYJTwoByTwoCell.m in Sources */,
 				351A276E1F0357C600442A24 /* CPChangeUserInfoViewController.m in Sources */,
 				35EF3B981F02546800EE5117 /* SYJDetailVC.m in Sources */,
@@ -1493,6 +1699,7 @@
 				351A27701F0357C600442A24 /* CPCollectViewController.m in Sources */,
 				35EF3B231F00E6A200EE5117 /* RegisterWebViewController.m in Sources */,
 				35EF3B661F00EF8A00EE5117 /* NSDate+Category.m in Sources */,
+				35F2F9A21F1745BB0022264B /* SYJMyCenterVC.m in Sources */,
 				35EF3BAA1F033F0800EE5117 /* SYJPickMiddleCell.m in Sources */,
 				356D4F501EF17A5100528B51 /* SDBrowserImageView.m in Sources */,
 				35EF3BA11F025F0700EE5117 /* SYJHotDeailCell.m in Sources */,
@@ -1514,26 +1721,35 @@
 				35C33AEE1F04ABAB00813D1D /* WTTempModel.m in Sources */,
 				35C33B171F04C9A000813D1D /* INRMapViewController.m in Sources */,
 				35EF3B6B1F00EF8A00EE5117 /* UIViewController+HUD.m in Sources */,
+				3533BF0B1F1527A200B8CDCA /* SYJLotSelectCell.m in Sources */,
 				351A27721F0357C600442A24 /* XCHelpTabController.m in Sources */,
 				35C33B471F04D21F00813D1D /* ITBaoGaoViewController.m in Sources */,
+				3533BEE01F150F5A00B8CDCA /* UINavigationController+NavAlpha.m in Sources */,
 				351A276B1F0357C600442A24 /* CPInfoHeaderView.m in Sources */,
 				356D4EEA1EF1791F00528B51 /* main.m in Sources */,
+				3533BEF81F151FC600B8CDCA /* LTPickingBallBottomBar.m in Sources */,
 				35C33B6E1F04D49E00813D1D /* MineDetailTableViewCell.m in Sources */,
 				35EF3B671F00EF8A00EE5117 /* NSDateFormatter+Category.m in Sources */,
 				35C33B301F04CA0A00813D1D /* ITKaiJiangViewController.m in Sources */,
 				35C33B501F04D26500813D1D /* ITSelectNumViewController.m in Sources */,
 				35C33B091F04C4FD00813D1D /* SYJLotteryCollectionCell.m in Sources */,
+				3533BEBA1F13572100B8CDCA /* SYJListCell.m in Sources */,
 				35C33AE61F04AB9A00813D1D /* WTWeatherHeaderView.m in Sources */,
+				3533BEE61F151F3500B8CDCA /* LTNumberPickingTableVC.m in Sources */,
 				35C33B801F04D9B100813D1D /* SYJNBAGameCell.m in Sources */,
 				356D4F4D1EF17A5100528B51 /* XWScanImage.m in Sources */,
+				3533BEE31F151EC800B8CDCA /* LTMyLottoryNumTableViewController.m in Sources */,
 				35EF3B311F00EC1800EE5117 /* BaseViewController.m in Sources */,
 				35C33AB31F03B3E500813D1D /* ITTieZiModel.m in Sources */,
 				35C33B7A1F04D99500813D1D /* SYJPlayerDataController.m in Sources */,
+				3533BEF51F151FC600B8CDCA /* LTChoseNumTitleV.m in Sources */,
+				3533BED61F150D0000B8CDCA /* LTLotteryPlayMode.m in Sources */,
 				358D5E191EF373B600441A7C /* PYSearchConst.m in Sources */,
 				35EF3B551F00EF6B00EE5117 /* UIView+correctImage.m in Sources */,
 				35C33ACB1F0490A600813D1D /* CPCommentModel.m in Sources */,
 				351A27731F0357C600442A24 /* XCWebViewController.m in Sources */,
 				35EF3B9B1F02554D00EE5117 /* SYJDetailCell.m in Sources */,
+				3533BED91F150D1700B8CDCA /* LTLotteryPlayNumMod.m in Sources */,
 				35EF3B241F00E6A200EE5117 /* testViewController.m in Sources */,
 				35C33ABB1F03B43800813D1D /* ITNoteDetailViewController.m in Sources */,
 				35C33B591F04D2B100813D1D /* ITZhongJiangViewController.m in Sources */,
@@ -1547,14 +1763,17 @@
 				35C33AFA1F04C41200813D1D /* SYJSeasonDataController.m in Sources */,
 				35C33AAA1F03B3A400813D1D /* ITJiLuViewController.m in Sources */,
 				35C33ADD1F04AB8C00813D1D /* WTWeatherDetailViewController.m in Sources */,
+				3533BED01F150CA500B8CDCA /* LTLotteryInfoMode.m in Sources */,
 				35C33ADB1F04AB8C00813D1D /* WTHomeViewController.m in Sources */,
 				356D4F521EF17A5100528B51 /* SDWaitingView.m in Sources */,
 				35C33AC81F04909B00813D1D /* CPNewsDetailWebView.m in Sources */,
 				35C33B001F04C42800813D1D /* SYJPlayerCell.m in Sources */,
+				3533BEF91F151FC600B8CDCA /* LTPickingBallCell.m in Sources */,
 				358D5E1B1EF373B600441A7C /* PYSearchViewController.m in Sources */,
 				35EF3B0D1F00E07700EE5117 /* SYJFourthController.m in Sources */,
 				35EF3B6E1F00F01300EE5117 /* CPNetWorkRequest.m in Sources */,
 				35EF3B221F00E6A200EE5117 /* RegisterViewController.m in Sources */,
+				3533BEDF1F150F5A00B8CDCA /* UINavigationBar+NavAlpha.m in Sources */,
 				35C33AC51F04909B00813D1D /* CDCommentInputView.m in Sources */,
 				35C33AB61F03B40600813D1D /* releaseViewController.m in Sources */,
 				356D4F4E1EF17A5100528B51 /* YJCache.m in Sources */,
@@ -1563,11 +1782,14 @@
 				35C33AE41F04AB9A00813D1D /* WTHomeTableViewCell.m in Sources */,
 				35EF3B521F00EF6B00EE5117 /* UILabel+fontSizeUp.m in Sources */,
 				35C33B4F1F04D26500813D1D /* ITSelectNumberViewController.m in Sources */,
+				3533BEF61F151FC600B8CDCA /* LTChosePlayRuleV.m in Sources */,
 				35EF3B891F023CAB00EE5117 /* SYJPickCell.m in Sources */,
 				35EF3B691F00EF8A00EE5117 /* UIResponder+Router.m in Sources */,
+				3533BF081F15255600B8CDCA /* LTLotteryBookCellBallView.m in Sources */,
 				35EF3B0A1F00E06800EE5117 /* SYJThirdController.m in Sources */,
 				35EF3B581F00EF6B00EE5117 /* UIColor+expanded.m in Sources */,
 				35EF3BA41F033CF200EE5117 /* SYJTwoCell.m in Sources */,
+				3533BEF71F151FC600B8CDCA /* LTPickHeaderV.m in Sources */,
 				356D4F441EF17A5100528B51 /* SYJNavitionController.m in Sources */,
 				351A276C1F0357C600442A24 /* HomeTableViewCell.m in Sources */,
 				356D4F4C1EF17A5100528B51 /* UIViewController+SYJViewContoller.m in Sources */,
@@ -1576,6 +1798,7 @@
 				356D4F431EF17A5100528B51 /* SYJHttpHelper.m in Sources */,
 				35C33AED1F04ABAB00813D1D /* WTMainModel.m in Sources */,
 				35C33ABC1F03B43800813D1D /* ITTieziDetailViewController.m in Sources */,
+				35F2F9AB1F1762AC0022264B /* SYJInfoVC.m in Sources */,
 				35EF3B071F00E05A00EE5117 /* SYJSecondController.m in Sources */,
 				351A276F1F0357C600442A24 /* CPChangeUserNameViewController.m in Sources */,
 				35EF3B501F00EF6B00EE5117 /* UIColor+expanded.m in Sources */,
@@ -1590,6 +1813,7 @@
 				35EF3B741F00FED800EE5117 /* SYJHeaderCell.m in Sources */,
 				351A27791F03888E00442A24 /* ITBaoGaoViewCell.m in Sources */,
 				356D4F531EF17A5100528B51 /* SGPageContentView.m in Sources */,
+				3533BEF41F151FC600B8CDCA /* LTBallView.m in Sources */,
 				35C33B531F04D27C00813D1D /* CPLeftView.m in Sources */,
 				35EF3B201F00E6A200EE5117 /* LoginViewController.m in Sources */,
 			);
@@ -1728,7 +1952,7 @@
 				INFOPLIST_FILE = MoxiNBA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.enlottery.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxilottery.syj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1743,7 +1967,7 @@
 				INFOPLIST_FILE = MoxiNBA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.enlottery.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxilottery.syj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FXBlurView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,27 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B823F8D4347B31CF594704F4E64693B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3791205DD8D743927997ADD657B1D6EF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5749C4F82FEB13A1A1C7F2DD77675CD0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5D76E4B0869A0F2676B81E06C912ADF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>78D29FDDA61F65D7244C402E10584DB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84491DC41B181E96E96658C2642789B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C8BD55CE6A8669E2E817364E86FC666</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,32 +122,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A2302959B4A8F4014F934E3CBCFE7D07</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AADCB90655D10911C6B6B26E86B79F9B</key>
+		<key>C7FB0749C6EB43CE3F44E975A1030FAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4C81E250D0957620898F82A2170E677</key>
+		<key>E3EE4D413B5C9C9544A91FC1A31C685A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D93725A6323322E7E33FB2B43E54C2FB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E126CC884083E368F45B73AFD780B6CA</key>
+		<key>EB03904D917AEBFBC2896D14CA041CE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -162,7 +147,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F38C06D8559F06F6C2800DAC902FA007</key>
+		<key>F6F9105621AFCBE90D821791EB94D8DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA9D33B002DEE4ED6C4C4FF9FE4A0D14</key>
 		<dict>
 			<key>primary</key>
 			<true/>

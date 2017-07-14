@@ -12,11 +12,11 @@
 /** 默认的列数 */
 static const NSInteger CYXDefaultColumnCount = 3;
 /** 每一列之间的间距 */
-static const CGFloat CYXDefaultColumnMargin = 10;
+static const CGFloat CYXDefaultColumnMargin = 0;
 /** 每一行之间的间距 */
 static const CGFloat CYXDefaultRowMargin = 10;
 /** 边缘间距 */
-static const UIEdgeInsets CYXDefaultEdgeInsets = {10, 10, 10, 10};
+static const UIEdgeInsets CYXDefaultEdgeInsets = {0, 0, 0, 0};
 
 @interface SYJCollectionFlowLayout()
 /** 存放所有cell的布局属性 */

@@ -40,22 +40,34 @@
     return _weatheModel;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    self.automaticallyAdjustsScrollViewInsets = YES;
+
+    self.navigationController.navigationBar.hidden = NO;
+    
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor whiteColor] title:@"天气" font:17.0];
+
+    [self getDatas];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createViews];
-    [self getDatas];
 
     // Do any additional setup after loading the view.
 }
 
-- (void)createViews {
+- (void)createViews{
     
 //    NSUserDefaults *userDatas = [NSUserDefaults standardUserDefaults];
 //    NSMutableArray *arr = [NSMutableArray array];
 //    [userDatas setObject:arr forKey:@"weather"];
 //    [userDatas synchronize];
     
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 24, screen_width, screen_height)];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screen_width, screen_height)];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.backgroundColor = [UIColor clearColor];
@@ -201,11 +213,7 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-   
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBar.hidden = YES;
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

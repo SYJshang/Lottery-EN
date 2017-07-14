@@ -155,25 +155,25 @@
     //    cell.titleName.text= @"大乐透";
     switch (_type) {
         case 0:
-            cell.titleName.text = @"3DBall";
+            cell.titleName.text = @"3D球";
             break;
         case 1:
-            cell.titleName.text = @"union lotto";
+            cell.titleName.text = @"双色球";
             break;
         case 2:
-            cell.titleName.text = @"Colorful music";
+            cell.titleName.text = @"七彩乐";
             break;
         case 3:
-            cell.titleName.text = @"Super Lotto";
+            cell.titleName.text = @"大乐透";
             break;
         case 4:
-            cell.titleName.text = @"3d of commissioning";
+            cell.titleName.text = @"3D试机号";
             break;
         case 5:
-            cell.titleName.text = @"arrangeThree";
+            cell.titleName.text = @"排列三";
             break;
         case 6:
-            cell.titleName.text = @"arrangeFive";
+            cell.titleName.text = @"排列五";
             break;
             
         default:

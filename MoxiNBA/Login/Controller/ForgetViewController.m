@@ -27,10 +27,10 @@ static int num = 60;
     [self addsubviews];
     if (_isChangePwd) {
         
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"ChangePass" font:scaleWithSize(24)];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"更改密码" font:scaleWithSize(24)];
 
     }else{
-        self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"ForgetPass" font:scaleWithSize(24)];
+        self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"忘记密码" font:scaleWithSize(24)];
 
     }
     self.navigationController.navigationBarHidden=NO;
@@ -49,42 +49,43 @@ static int num = 60;
     
 }
 -(void)addsubviews{
+
     
     for (int i=0; i<4; i++) {
-        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+50*i, K_FRAME_BASE_WIDTH, 1)];
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, K_FRAME_NAVIGATION_BAR_HEIGHT+50*i, K_FRAME_BASE_WIDTH, 1)];
         [lineView setBackgroundColor:[UIColor lightGrayColor]];
         [lineView setAlpha:0.2f];
         [self.view addSubview:lineView];
     }
     
     phoneField = [[UITextField alloc] init];
-    [phoneField setFrame:CGRectMake(20, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT, K_FRAME_BASE_WIDTH-40, 50)];
+    [phoneField setFrame:CGRectMake(20, K_FRAME_NAVIGATION_BAR_HEIGHT, K_FRAME_BASE_WIDTH-40, 50)];
     [phoneField setPlaceholder:@"PhoneNumber"];
     [phoneField setDelegate:self];
     [phoneField setReturnKeyType:UIReturnKeyDone];
     [self.view addSubview:phoneField];
     
     varifyField = [[UITextField alloc] init];
-    [varifyField setFrame:CGRectMake(20, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+50, K_FRAME_BASE_WIDTH-40, 50)];
+    [varifyField setFrame:CGRectMake(20, K_FRAME_NAVIGATION_BAR_HEIGHT+50, K_FRAME_BASE_WIDTH-40, 50)];
     [varifyField setPlaceholder:@"valiCode"];
     [varifyField setDelegate:self];
     [varifyField setReturnKeyType:UIReturnKeyDone];
     [self.view addSubview:varifyField];
     //新密码
     newPswField = [[UITextField alloc] init];
-    [newPswField setFrame:CGRectMake(20, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+100, K_FRAME_BASE_WIDTH-40, 50)];
+    [newPswField setFrame:CGRectMake(20, K_FRAME_NAVIGATION_BAR_HEIGHT+100, K_FRAME_BASE_WIDTH-40, 50)];
     [newPswField setPlaceholder:@"newPass"];
     [newPswField setDelegate:self];
     [newPswField setReturnKeyType:UIReturnKeyDone];
     [self.view addSubview:newPswField];
     
-//    UIView *verifyLine = [[UIView alloc] initWithFrame:CGRectMake(K_FRAME_BASE_WIDTH-110, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+77.5, 1, 35)];
-//    [verifyLine setBackgroundColor:[UIColor lightGrayColor]];
-//    [verifyLine setAlpha:0.2f];
-//    [self.view addSubview:verifyLine];
+    //    UIView *verifyLine = [[UIView alloc] initWithFrame:CGRectMake(K_FRAME_BASE_WIDTH-110, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+77.5, 1, 35)];
+    //    [verifyLine setBackgroundColor:[UIColor lightGrayColor]];
+    //    [verifyLine setAlpha:0.2f];
+    //    [self.view addSubview:verifyLine];
     
     UIButton *varifyBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [varifyBtn setFrame:CGRectMake(K_FRAME_BASE_WIDTH-100, K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+60, 80, 30)];
+    [varifyBtn setFrame:CGRectMake(K_FRAME_BASE_WIDTH-100, K_FRAME_NAVIGATION_BAR_HEIGHT+60, 80, 30)];
     [varifyBtn setTitle:@"getCode" forState:UIControlStateNormal];
     [varifyBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     varifyBtn.layer.cornerRadius =5.0;
@@ -97,12 +98,12 @@ static int num = 60;
     
     
     
-
     
-//    显示安全输入按钮
+    
+    //    显示安全输入按钮
     UIImage *NImage = [UIImage imageNamed:@"loginpage_btn_hide.png"];
     UIImage *SImage = [UIImage imageNamed: @"loginpage_btn_display.png"];
-    CGFloat BtnY = K_FRAME_NAVIGATION_BAR_HEIGHT+K_FRAME_HEAD_HEIGHT+100+(50-RectHeight(NImage)*2)/2;
+    CGFloat BtnY = K_FRAME_NAVIGATION_BAR_HEIGHT+100+(50-RectHeight(NImage)*2)/2;
     UIButton *showPswBtn1 = [[UIButton alloc] initWithFrame:CGRectMake(K_FRAME_BASE_WIDTH-70, BtnY+5,RectWidth(NImage), RectHeight(NImage))];
     [showPswBtn1 setBackgroundImage:NImage forState:UIControlStateNormal];
     [showPswBtn1 setBackgroundImage:SImage forState:UIControlStateSelected];
@@ -121,6 +122,8 @@ static int num = 60;
     nextBtn.layer.cornerRadius = 5.0;
     [nextBtn addTarget:self action:@selector(nextBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nextBtn];
+
+
 }
 
 //设置显示密码安全显示

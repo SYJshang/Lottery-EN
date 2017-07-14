@@ -14,6 +14,10 @@
 #import "SYJNavitionController.h"
 #import "WTHomeViewController.h"
 #import "ITHomeViewController.h"
+#import "ITJiLuViewController.h"
+#import "SYJMainVC.h"
+#import "ITKaiJiangViewController.h"
+#import "SYJMyCenterVC.h"
 
 @interface SYJTabBarController ()
 
@@ -26,21 +30,26 @@
     
     
     //
-    SYJFirstController *main = [[SYJFirstController alloc]init] ;
+    SYJMainVC *main = [[SYJMainVC alloc]init] ;
     //    main.view.backgroundColor = [UIColor redColor];
-    [self addChildVc:main Title:@"Lotto" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"lottery" withTitleColor:TextColor unselectedImage:@"lottery1" withTitleColor:[UIColor lightGrayColor]];
-    //
-    SYJSecondController  *caseVC = [[SYJSecondController alloc]init];
+    [self addChildVc:main Title:@"大厅" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"lottery" withTitleColor:TextColor unselectedImage:@"lottery1" withTitleColor:[UIColor lightGrayColor]];
+    
+    
+    ITKaiJiangViewController *kaijiang = [[ITKaiJiangViewController alloc]init];
     //    caseVC.view.backgroundColor = [UIColor grayColor];
-    [self addChildVc:caseVC Title:@"News" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"news" withTitleColor:TextColor unselectedImage:@"news1" withTitleColor:[UIColor lightGrayColor]];
+    [self addChildVc:kaijiang Title:@"开奖" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"开奖" withTitleColor:TextColor unselectedImage:@"开奖1" withTitleColor:[UIColor lightGrayColor]];
     //
-    WTHomeViewController *fitVC = [[WTHomeViewController alloc]init];
-    [self addChildVc:fitVC Title:@"Weather" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"weather" withTitleColor:TextColor unselectedImage:@"weather1" withTitleColor:[UIColor lightGrayColor]];
+    ITJiLuViewController  *caseVC = [[ITJiLuViewController alloc]init];
+    //    caseVC.view.backgroundColor = [UIColor grayColor];
+    [self addChildVc:caseVC Title:@"论坛" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"论坛" withTitleColor:TextColor unselectedImage:@"论坛1" withTitleColor:[UIColor lightGrayColor]];
+    //
+    SYJMyCenterVC *fitVC = [[SYJMyCenterVC alloc]init];
+    [self addChildVc:fitVC Title:@"个人信息" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"个人信息" withTitleColor:TextColor unselectedImage:@"个人信息1" withTitleColor:[UIColor lightGrayColor]];
     
     
     ITHomeViewController *MyVC = [[ITHomeViewController alloc]init];
     //    MyVC.view.backgroundColor = [UIColor purpleColor];
-    [self addChildVc:MyVC Title:@"Find" withTitleSize:12.0 andFoneName:@"HelveticaNeue-Bold" selectedImage:@"find" withTitleColor:TextColor unselectedImage:@"find1" withTitleColor:[UIColor lightGrayColor]];
+    [self addChildVc:MyVC Title:@"更多" withTitleSize:12.0 andFoneName:@"DBLCDTempBlack" selectedImage:@"更多" withTitleColor:TextColor unselectedImage:@"更多1" withTitleColor:[UIColor lightGrayColor]];
     
     
     // Do any additional setup after loading the view.
@@ -84,6 +93,13 @@
      */
 }
 
+
+- (void)setSelected:(NSInteger)index;
+{
+    //    _currentIndex = 0;
+    self.selectedIndex = index;
+    
+}
 
 
 - (void)didReceiveMemoryWarning {

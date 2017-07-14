@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Change UserName" font:18];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"更改用户名" font:18];
     
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     leftBtn.frame = CGRectMake(20, 0, scaleWithSize(16), scaleWithSize(16));

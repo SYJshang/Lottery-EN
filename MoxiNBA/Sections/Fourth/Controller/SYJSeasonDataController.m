@@ -8,31 +8,10 @@
 
 #import "SYJSeasonDataController.h"
 #import "SYJPlayerDataModel.h"
-#import <FXBlurView.h>
 
 @interface SYJSeasonDataController (){
     
-    //    "st": 1,
-    //    "fta": 14,
-    //    "bs": 2,
-    //    "off": 2,
-    //    "pf": 2,
-    //    "lastUpdated": "20161209T045620.124Z",
-    //    "gameId": 21600327,
-    //    "min": "32:27",
-    //    "fgm": 7,
-    //    "to": 4,
-    //    "deff": 4,
-    //    "pts": 25,
-    //    "tpa": 2,
-    //    "playerId": 2544,
-    //    "ftm": 10,
-    //    "fga": 10,
-    //    "plusminus": 31,
-    //    "ast": 7,
-    //    "tpm": 1,
-    //    "tot": 6
-    
+
     UILabel *st;
     UILabel *fta;
     UILabel *off;
@@ -79,13 +58,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    FXBlurView *_maskView = [[FXBlurView alloc] initWithFrame:self.view.bounds];
-    _maskView.dynamic = NO;
-    _maskView.tintColor = [UIColor blackColor];
-    _maskView.blurRadius = 40;
-    [self.view addSubview:_maskView];
-    self.view.layer.contents = (id)[UIImage imageNamed:@"nba3.png"].CGImage;
-    
+ 
     
     st = [[UILabel alloc]init];
     [self.view addSubview:st];

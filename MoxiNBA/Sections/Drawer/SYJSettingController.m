@@ -35,7 +35,7 @@
     btn.frame = CGRectMake(10, 10, 24, 24);
     [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.titleView = [UILabel titleWithColor:TextColor title:@"Setting" font:18];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor whiteColor] title:@"设置" font:18];
     
 }
 

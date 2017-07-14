@@ -138,7 +138,7 @@ typedef NS_ENUM(NSInteger, WSLoginShowType) {
     
     
     self.loginBtn = [[UIButton alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(self.textField2.frame)+10, smallView.frame.size.width-20, 40)];
-    [self.loginBtn setTitle:@"login" forState:UIControlStateNormal];
+    [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     self.loginBtn.layer.cornerRadius = 5;
     [self.loginBtn setBackgroundColor:TextColor];
     [self.loginBtn addTarget:self action:@selector(LoginAction:) forControlEvents:UIControlEventTouchUpInside];

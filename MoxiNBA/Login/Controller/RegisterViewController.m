@@ -36,17 +36,35 @@ static int num = 60;
 
 @synthesize strTime;
 
+
+- (void)leftBtn{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-//    [self createHeaderViewWithBackButton:@"用户注册"];
     
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"back1"] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(10, 10, 24, 24);
+    [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    
+
+//    [self createHeaderViewWithBackButton:@"用户注册"];
+    self.title=@"Register";
+    
+
+    
+
+
     [self addSubViews];
     
-    self.title=@"Register";
-    self.navigationController.navigationBarHidden=NO;
+//    self.navigationController.navigationBarHidden=NO;
     
-//    self.navigationController.navigationBar.barStyle=UIBarStyleBlackOpaque;
     
 //    [self.navigationController.navigationBar setBarTintColor:[Utils colorFromHexRGB:@"d91d36"]];
     // Do any additional setup after loading the view.
@@ -59,28 +77,28 @@ static int num = 60;
 
 - (void)addSubViews{
     
-//    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height -170, self.view.bounds.size.width, 30)];
-//    label.text= @"轻触上面的'提交'按钮，即表示您同意";
-//    label.textAlignment = NSTextAlignmentCenter;
-//    [self.view addSubview:label];
-//    
-//    UIButton *agreeButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [agreeButton setFrame:CGRectMake(0, self.view.bounds.size.height -130, self.view.bounds.size.width, 30)];
-//    [agreeButton setTitle:@"《彩票圈软件许可及服务协议》" forState:UIControlStateNormal];
-//    [agreeButton addTarget:self action:@selector(agreeButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:agreeButton];
-//    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 170, self.view.bounds.size.width, 30)];
+    label.text= @"点击'提交'按钮，即表示您同意";
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
     
-    NSArray *placeholderArray = [NSArray arrayWithObjects:@"phone Number",@"code",@"nickName",@"password", nil];//xx位至xx位
+    UIButton *agreeButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [agreeButton setFrame:CGRectMake(0, self.view.bounds.size.height -130, self.view.bounds.size.width, 30)];
+    [agreeButton setTitle:@"《彩票圈软件许可及服务协议》" forState:UIControlStateNormal];
+    [agreeButton addTarget:self action:@selector(agreeButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:agreeButton];
+    
+    
+    NSArray *placeholderArray = [NSArray arrayWithObjects:@"手机号",@"验证码",@"用户名",@"密码", nil];//xx位至xx位
     for (int i=0; i<4; i++) {
         
-        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, registerFeildHeight*(i+2), K_FRAME_BASE_WIDTH, 1)];
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, registerFeildHeight * (i+1), K_FRAME_BASE_WIDTH, 1)];
         [lineView setBackgroundColor:[UIColor lightGrayColor]];
         [lineView setAlpha:0.2f];
         [self.view addSubview:lineView];
         
         if (i==3) {
-            UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, registerFeildHeight*(i+3), K_FRAME_BASE_WIDTH, 1)];
+            UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, registerFeildHeight*(i+2), K_FRAME_BASE_WIDTH, 1)];
             [lineView setBackgroundColor:[UIColor lightGrayColor]];
             [lineView setAlpha:0.2f];
             [self.view addSubview:lineView];
@@ -93,7 +111,7 @@ static int num = 60;
             textWid = K_FRAME_BASE_WIDTH-40;
         }
         
-        UITextField *registerField = [[UITextField alloc] initWithFrame:CGRectMake(20, registerFeildHeight*(i+2), K_FRAME_BASE_WIDTH-40, registerFeildHeight)];
+        UITextField *registerField = [[UITextField alloc] initWithFrame:CGRectMake(20, registerFeildHeight*(i+1), K_FRAME_BASE_WIDTH - 40, registerFeildHeight)];
         [registerField setPlaceholder:[placeholderArray objectAtIndex:i]];
         [registerField setDelegate:self];
         [registerField setReturnKeyType:UIReturnKeyDone];
@@ -109,7 +127,7 @@ static int num = 60;
         
         if (i == 1) {
             UIButton *yanzhen = [[UIButton alloc] initWithFrame:CGRectMake(K_FRAME_BASE_WIDTH-110, CGRectGetMinY(registerField.frame)+10, 80, registerFeildHeight/2)];
-            [yanzhen setTitle:@"get code" forState:UIControlStateNormal];
+            [yanzhen setTitle:@"获取验证码" forState:UIControlStateNormal];
             [yanzhen.titleLabel setFont:[UIFont systemFontOfSize:14]];
             [yanzhen setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [yanzhen addTarget:self action:@selector(clickGetCodeButton) forControlEvents:UIControlEventTouchUpInside];
@@ -146,7 +164,7 @@ static int num = 60;
     [registerBtn setFrame:CGRectMake(15, K_RECT_MAXY(self.showPswBtn)+50, K_FRAME_BASE_WIDTH-30, 40)];
     [registerBtn setBackgroundColor:K_COLOR_DAMINO_RED];
     [registerBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [registerBtn setTitle:@"submit" forState:UIControlStateNormal];
+    [registerBtn setTitle:@"注册" forState:UIControlStateNormal];
     registerBtn.layer.cornerRadius = 5.0;
     [registerBtn addTarget:self action:@selector(registerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:registerBtn];
@@ -166,51 +184,54 @@ static int num = 60;
 
 - (void)registerBtnAction:(id)sender{
     
-    [SVProgressHUD showErrorWithStatus:@"Temporarily not registered, please try again later!!!"];
+    [SVProgressHUD showWithStatus:@"loading..."];
     
-//        NSMutableArray *ary = [NSMutableArray array];
-//        for (int i = 0; i < 4; i++) {
-//            UITextField *field = (UITextField *)[self.view viewWithTag:1000100+i];
-//            if (i < 4 && field.text.length == 0) {
-//                [SVProgressHUD showWithStatus:@"Please fill out the required fields and submit again"];
-//                return;
-//            }
-//            [ary addObject:field.text];
-//        }
-//    
-//    if (strTime==nil) {
-//         [SVProgressHUD showWithStatus:@"Please send verification code"];
-//    }else{
-//        
-//        NSMutableDictionary *parmetr = [NSMutableDictionary dictionary];
-//        [parmetr setObject:@"" forKey:@""];
-//        [parmetr setObject:@"" forKey:@""];
-//        [parmetr setObject:@"" forKey:@""];
-//        [parmetr setObject:@"" forKey:@""];
-//
-//        
-//        [SYJHttpHelper Post:[NSString stringWithFormat:@""] parameters:nil success:^(id responseObject) {
-//            
-//        } failure:^(NSError *error) {
-//            
-//        }];
+        NSMutableArray *ary = [NSMutableArray array];
+        for (int i = 0; i < 4; i++) {
+            UITextField *field = (UITextField *)[self.view viewWithTag:1000100+i];
+            if (i < 4 && field.text.length == 0) {
+                [SVProgressHUD showWithStatus:@"请填写完整并再次提交"];
+                return;
+            }
+            [ary addObject:field.text];
+        }
+    
+    if (strTime==nil) {
+         [SVProgressHUD showWithStatus:@"请发送验证码"];
+    }else{
+        
+        NSMutableDictionary *parmetr = [NSMutableDictionary dictionary];
+        [parmetr setObject:ary[0] forKey:@"phoneNumber"];
+        [parmetr setObject:ary[1] forKey:@"code"];
+        [parmetr setObject:ary[2] forKey:@"username"];
+        [parmetr setObject:ary[3] forKey:@"password"];
+        [parmetr setObject:self.strTime forKey:@"codeTime"];
+
+        
+        [SYJHttpHelper Post:[NSString stringWithFormat:@"http://www.h1055.com:9032/user/register.do"] parameters:parmetr success:^(id responseObject) {
+            
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+            SYJLog(@"%@",dict);
+            if (![[dict objectForKey:@"errorcode"]  isEqualToString:@"0"]) {
+                NSString *errStr = [dict objectForKey:@"error"];
+                [SVProgressHUD dismiss];
+                [SVProgressHUD showErrorWithStatus:errStr];
+                
+            }else{
+                [SVProgressHUD showSuccessWithStatus:@"注册成功！"];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    [self.navigationController popViewControllerAnimated:YES];
+                });
+            }
+
+            
+        } failure:^(NSError *error) {
+            
+        }];
     
         
-//        [[HttpRequestClient sharedClient] userRegister:ary[0] password:ary[3] validcode:ary[1] username:strTime nickname:[Utils paramStringIsNull:ary[2]]  email:nil birthday:nil gender:nil request:^(int resultCode, NSString *resultMsg, NSDictionary *dataDict, NSError *error) {
-//            if (![[dataDict objectForKey:@"errorcode"]  isEqualToString:@"0"]) {
-//                NSString *errStr = [dataDict objectForKey:@"error"];
-//                [SVProgressHUD showWithStatus:errStr];
-//
-//            }else{
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                
-//                [self.navigationController  popViewControllerAnimated:YES];
-//                });
-//            
-//            }
-//            
-//        }];
-//    }
+    }
 }
     
     
@@ -223,17 +244,17 @@ static int num = 60;
             [self.codeBtn setUserInteractionEnabled:NO];
             time = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendValidCode) userInfo:nil repeats:YES];
         } else {
-            [SVProgressHUD showErrorWithStatus:@"Mobile phone number format is not correct"];
+            [SVProgressHUD showErrorWithStatus:@"手机号码格式不正确"];
         }
     } else {
-         [SVProgressHUD showErrorWithStatus:@"Please enter the 11 phone number"];
+         [SVProgressHUD showErrorWithStatus:@"请输入11位电话号码"];
     }
 }
 
 
 -(void)agreeButtonClicked{
-    AgreeViewController *agreeViewController=[[AgreeViewController alloc] init];
-    [self.navigationController pushViewController:agreeViewController animated:YES];
+//    AgreeViewController *agreeViewController=[[AgreeViewController alloc] init];
+//    [self.navigationController pushViewController:agreeViewController animated:YES];
     
 }
 
@@ -246,13 +267,14 @@ static int num = 60;
 - (void)sendValidCode {
     if (num == 60) {
         num--;
-        NSString *url = [NSString stringWithFormat:@"https://www.h1055.com:80/ozsuser/registerCheckUser.htmls?phonenumber=%@", self.mobile.text];
-//        NSDictionary *parame = @{
-//                                 
-//                                 };
-        [[CPNetWorkRequest sharedClient]get:url parame:nil success:^(id object) {
-            [SVProgressHUD showSuccessWithStatus:@"Verification code sent successfully"];
-            strTime = object[@"result"][@"strTime"];
+        NSString *url = [NSString stringWithFormat:@"%@/user/sendCode.do",URL];
+        NSDictionary *parame = @{
+                                @"phoneNumber": self.mobile.text
+                                 
+                                 };
+        [[CPNetWorkRequest sharedClient]get:url parame:parame success:^(id object) {
+            [SVProgressHUD showSuccessWithStatus:@"验证码发送成功！"];
+            strTime = object[@"result"][@"createtime"];
         } failure:^(NSError *err) {
             
         }];
@@ -268,7 +290,7 @@ static int num = 60;
         [self.codeBtn setTitle:[NSString stringWithFormat:@"%d秒",num] forState:UIControlStateNormal];
     } else {
         [time invalidate];
-        [self.codeBtn setTitle:@"Get code" forState:UIControlStateNormal];
+        [self.codeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
         [self.codeBtn setUserInteractionEnabled:YES];
         num = 60;
     }
@@ -282,7 +304,7 @@ static int num = 60;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [self changeViewHeightForKeyBoardWillHide:textField];
+//    [self changeViewHeightForKeyBoardWillHide:textField];
     [textField resignFirstResponder];
     return YES;
 }
@@ -293,6 +315,7 @@ static int num = 60;
    // [(AppDelegate*)[[UIApplication sharedApplication]delegate] showTabbar];
     [super viewWillDisappear:animated];
 }
+
 
 
 #pragma mark -

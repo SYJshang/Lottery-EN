@@ -87,7 +87,7 @@
     [self.window makeKeyAndVisible];
     
     //友盟注册
-    UMConfigInstance.appKey = @"59434f9c1061d257da000d3b";
+    UMConfigInstance.appKey = @"59675c6dbbea831add0001e5";
     UMConfigInstance.channelId = @"App Store";
     [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
@@ -117,7 +117,7 @@
     // init Push
     // notice: 2.1.5版本的SDK新增的注册方法，改成可上报IDFA，如果没有使用IDFA直接传nil
     // 如需继续使用pushConfig.plist文件声明appKey等配置内容，请依旧使用[JPUSHService setupWithOption:launchOptions]方式初始化。
-    [JPUSHService setupWithOption:launchOptions appKey:@"8dff00d494edcf03a60774f1"
+    [JPUSHService setupWithOption:launchOptions appKey:@"c0c9c85461d90b9cc2ed8ed9"
                           channel:@"App Store"
                  apsForProduction:0
             advertisingIdentifier:nil];

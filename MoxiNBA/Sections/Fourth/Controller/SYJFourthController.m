@@ -10,6 +10,7 @@
 #import "SYJCollectionFlowLayout.h"
 #import "SYJLotteryCollectionCell.h"
 #import "SYJNBAPlayDetailVC.h"
+#import "SYJTitleCell.h"
 //#import "SYJDateNBAGameVC.h"
 
 #define Kwidths  ([UIScreen mainScreen].bounds.size.width / 3)
@@ -120,8 +121,6 @@
     //创建CollectionView
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, KSceenW, KSceenH - 64) collectionViewLayout:layout];
     collectionView.backgroundColor = [UIColor whiteColor];
-    collectionView.dataSource = self;
-    collectionView.delegate = self;
     
     self.collectionView = collectionView;
     
@@ -140,6 +139,9 @@
 }
 
 #pragma mark - <UICollectionViewDataSource>
+
+
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.listArr.count;
@@ -160,6 +162,7 @@
 
 
 #pragma mark - <CYXWaterFlowLayoutDelegate>
+
 - (CGFloat)waterflowLayout:(SYJCollectionFlowLayout *)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
 {
     return KSceenW / 3;

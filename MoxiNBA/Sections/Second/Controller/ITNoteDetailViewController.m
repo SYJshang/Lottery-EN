@@ -21,7 +21,7 @@
     btn.frame = CGRectMake(10, 10, 24, 24);
     [btn addTarget:self action:@selector(leftBtn) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor grayColor] title:@"Release" font:scaleWithSize(24)];
+    self.navigationItem.titleView = [UILabel titleWithColor:[UIColor lightGrayColor] title:@"发布" font:scaleWithSize(24)];
     
     [self createViews];
     //    [self createRightBtn];

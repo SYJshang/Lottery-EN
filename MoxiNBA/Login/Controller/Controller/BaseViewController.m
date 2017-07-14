@@ -120,6 +120,8 @@
 //    }
 //}
 
+
+
 #pragma mark -
 #pragma mark keyboard
 -(void)addKeyBoardHide:(BOOL)isAdd{
@@ -140,7 +142,7 @@
 
 //键盘退下
 -(void)keyboardHide:(UITapGestureRecognizer*)tap{
-    [self.view setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+//    [self.view setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.view endEditing:YES];
 }
 

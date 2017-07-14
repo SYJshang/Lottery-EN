@@ -10,4 +10,7 @@
 
 @interface SYJTabBarController : UITabBarController
 
+- (void)setSelected:(NSInteger)index;
+
+
 @end
